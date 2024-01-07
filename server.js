@@ -5,7 +5,7 @@ app.get("/api/get", (req, res) => {
   res.send({ message: "Welcome to Whatszoom server" });
 });
 
-app.get("/api/get_user_detail", (req, res) => {
+app.get("/api/get_user_details", (req, res) => {
   res.send({
     user: {
       Platform: "Whatszoom app",
