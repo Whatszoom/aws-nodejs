@@ -14,6 +14,15 @@ app.get("/api/get_user_details", (req, res) => {
   });
 });
 
+app.get("/api/get_user_main", (req, res) => {
+  res.send({
+    user: {
+      Platform: "Whatszoom Backeendb1 server",
+      From: "Whatszoom india technology",
+    },
+  });
+});
+
 app.listen(8000, () => {
   console.log("listening to 8000");
 });
