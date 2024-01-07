@@ -2,7 +2,16 @@ const express = require("express");
 const app = express();
 
 app.get("/api/get", (req, res) => {
-  res.send({ message: "hello back to nodejs" });
+  res.send({ message: "Welcome to Whatszoom server" });
+});
+
+app.get("/api/get_user_detail", (req, res) => {
+  res.send({
+    user: {
+      Platform: "Whatszoom app",
+      From: "Whatszoom india",
+    },
+  });
 });
 
 app.listen(8000, () => {
