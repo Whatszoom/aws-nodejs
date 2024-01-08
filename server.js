@@ -20,6 +20,7 @@ app.get("/api/get_user_main", (req, res) => {
     user: {
       Platform: "Whatszoom Backeendb1 server",
       From: "Whatszoom india technology",
+      HQ: "Whatszoom india technology Hq",
     },
     env: process.env.NAME,
   });
